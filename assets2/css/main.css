@@ -136,7 +136,7 @@
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #00D3B7;
+			color: #FFAF4C;
 		}
 
 	strong, b {
@@ -281,8 +281,8 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			border-color: #00D3B7;
-			color: #00D3B7;
+			border-color: #FFAF4C;
+			color: #FFAF4C;
 		}
 
 			input[type="submit"]:hover:active,
@@ -398,7 +398,7 @@
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #00D3B7;
+			border-color: #FFAF4C;
 		}
 
 	.select-wrapper {
@@ -890,7 +890,7 @@
 					top: 0;
 					width: 100%;
 					height: 100%;
-					box-shadow: inset 0 0 0 2px #00D3B7, inset 0 0 0px 3px rgba(0, 0, 0, 0.15);
+					box-shadow: inset 0 0 0 2px #FF8C00, inset 0 0 0px 3px rgba(0, 0, 0, 0.15);
 					opacity: 0;
 					z-index: 1;
 				}
