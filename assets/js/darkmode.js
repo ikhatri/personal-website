@@ -6,7 +6,7 @@ function darkMode() {
     button.innerHTML = "Dark Mode";
   }
   var element0 = document.getElementById("banner-section");
-  var element1 = document.getElementById("first");
+  var element1 = document.getElementById("photography");
   var element2 = document.getElementById("hum-section");
   var element3 = document.getElementById("project-section");
   var element4 = document.getElementById("gallery");
