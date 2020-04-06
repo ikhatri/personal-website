@@ -65,6 +65,9 @@
 <loc>http://localhost:4000/portfolio/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/proj/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/publications/</loc>
 </url>
 <url>
