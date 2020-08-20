@@ -18,7 +18,7 @@ Currently I'm a software engineer working at [Argo AI](https://argo.ai) on the s
 * [Philips Respironics](https://www.respironics.com/) - as an intern on the Advanced Innovations team, where I was developing new ways for people to interact with Philips products using Natural Language Processing
 * [University of Pittsburgh's sciVelo](https://scivelo.pitt.edu) - as an intern helping faculty at Pitt create business plans for the commercialization of their research
 
-Coding Projects
+Software Projects
 ======
 * [Dashboard](https://github.com/fuseumass/dashboard) - a Ruby on Rails web app used for registration, hardware inventory, hardware checkouts, mentorship, check in, and everything else you would need at a hackathon
 * [Hackerforce](https://github.com/fuseumass/hackerforce) - a Django based CRM tool created to help hackathon organizers manage their sponsorship leads and keep track of contacts, emails and more
