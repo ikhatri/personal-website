@@ -12,9 +12,9 @@ redirect_from:
 
 Work experience
 ======
-Currently I'm a software engineer working at [Argo AI](https://argo.ai) on the special projects team to solve on challenging robotics problems. In the past I've worked at the following places:
+Currently I'm a Senior Research Scientist working at [Motional](https://www.motional.com) on the Autonomy Research team to develop novel solutions to challenging robotics problems. In the past I've worked at the following places:
 
-* [Argo AI](https://argo.ai) - as an intern on the Onboard Libraries team where I worked to write fast C++ libraries for use onboard the Argo self-driving vehicle
+* [Argo AI](https://argo.ai) - as a software engineer on the Geometric Perception team where I worked on developing robust 3D perception pipelines for use onboard the Argo self-driving vehicle. Previously I was also an intern on the Onboard Libraries team where I worked to write fast C++ libraries.
 * [Philips Respironics](https://www.respironics.com/) - as an intern on the Advanced Innovations team, where I was developing new ways for people to interact with Philips products using Natural Language Processing
 * [University of Pittsburgh's sciVelo](https://scivelo.pitt.edu) - as an intern helping faculty at Pitt create business plans for the commercialization of their research
 
