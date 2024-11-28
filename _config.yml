@@ -10,14 +10,14 @@ locale                   : "en-US"
 title                    : "Ishan Khatri"
 title_separator          : "-"
 name                     : &name "Ishan Khatri"
-description              : &description "Software Engineer and Roboticist at Argo AI"
+description              : &description "Research Engineer at Stack AV"
 url                      : https://ishan.khatri.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ikhatri/personal-website"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
-future                   : true
+future                   : false
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false #change to true to add link to talkmap on talks page
 comments:
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Ishan Khatri"
   avatar           : "profile.jpeg"
-  bio              : "Senior Research Scientist at <a style='color: black;' href='https://motional.com'>Motional</a>"
+  bio              : "Senior Research Engineer at <a style='color: black;' href='https://stackav.com'>Stack AV</a>"
   location         : "Pittsburgh, PA"
   employer         :
   pubmed           :
@@ -115,6 +115,8 @@ author:
   xing             :
   youtube          :
   wikipedia        :
+  bluesky          : "@ishan.khatri.io"
+  threads          :
 
 
 # Reading Files

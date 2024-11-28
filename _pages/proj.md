@@ -12,8 +12,9 @@ redirect_from:
 
 Work experience
 ======
-Currently I'm a Senior Research Scientist working at [Motional](https://www.motional.com) on the Autonomy Research team to develop novel solutions to challenging robotics problems. In the past I've worked at the following places:
+Currently I'm a Senior Research Engineer working at [Stack AV](https://www.stackav.com) on the Perception team to develop novel solutions to challenging robotics problems. In the past I've worked at the following places:
 
+* [Motional](https://motional.com) - as a senior scientist on the Autonomy Research team where I worked on techniques for radar perception, sensor fusion, open world perception and a number of other research topics. Some of our work on imaging radar has been highlighted in [this blog post](https://motional.com/news/technically-speaking-motionals-imaging-radar-architecture-paves-road-major-improvements) and this [press release](https://motional.com/news/rethinking-role-radars-robotaxis-mature).
 * [Argo AI](https://argo.ai) - as a software engineer on the Geometric Perception team where I worked on developing robust 3D perception pipelines for use onboard the Argo self-driving vehicle. Previously I was also an intern on the Onboard Libraries team where I worked to write fast C++ libraries.
 * [Philips Respironics](https://www.respironics.com/) - as an intern on the Advanced Innovations team, where I was developing new ways for people to interact with Philips products using Natural Language Processing
 * [University of Pittsburgh's sciVelo](https://scivelo.pitt.edu) - as an intern helping faculty at Pitt create business plans for the commercialization of their research

@@ -1,7 +1,7 @@
 ---
 title: "Agent-aware State Estimation in Autonomous Vehicles"
 collection: publications
-permalink: /publication/2021-09-30-agent-aware-state-estimation
+permalink: /publication/aase
 excerpt: 'A framework for calculating indirect estimations of state given observations of the behavior of other agents in the environment. We model traffic light estimation as such a problem and apply our framework to recover light state with over 70% accuracy using only the motion of other vehicles in the scene.'
 date: 2021-09-30
 venue: 'International Confderence on Intelligent Robots and Systems (IROS)'
