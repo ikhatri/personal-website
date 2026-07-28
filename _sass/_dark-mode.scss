@@ -1,0 +1,363 @@
+/* ==========================================================================
+   DARK MODE
+   ========================================================================== */
+
+:root {
+  --background-color: #fff;
+  --text-color: #404040;
+  --border-color: #e8e8e8;
+  --code-background-color: #fafafa;
+  --link-color: #52adc8;
+  --link-color-hover: #2e8fa8;
+  --masthead-link-color: #7a8288;
+  --masthead-link-color-hover: #5a6268;
+  --primary-color: #7a8288;
+  --footer-color: #909090;
+  --greedy-nav-bg: #fff;
+  --sidebar-bg: #fff;
+  --sidebar-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  --notice-background: #f5f5f5;
+  --table-border: #e8e8e8;
+  --table-background-even: #f9f9f9;
+}
+
+/* Dark mode html element (prevents white strip below body) */
+html.dark-mode {
+  background-color: #2d2d2d !important;
+}
+
+body.dark-mode {
+  --background-color: #2d2d2d;
+  --text-color: #d8d8d8;
+  --border-color: #444;
+  --code-background-color: #3a3a3a;
+  --link-color: #6bc5e0;
+  --link-color-hover: #8dd4ea;
+  --masthead-link-color: #b0b8c0;
+  --masthead-link-color-hover: #d0d8e0;
+  --primary-color: #b0b8c0;
+  --footer-color: #909090;
+  --greedy-nav-bg: #2d2d2d;
+  --sidebar-bg: #363636;
+  --sidebar-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  --notice-background: #363636;
+  --table-border: #444;
+  --table-background-even: #333;
+
+  /* Override SCSS variables with CSS properties */
+  background-color: var(--background-color) !important;
+  color: var(--text-color) !important;
+}
+
+/* Dark mode body-level overrides */
+body.dark-mode .masthead {
+  background: var(--greedy-nav-bg);
+  border-bottom-color: var(--border-color);
+}
+
+body.dark-mode .greedy-nav {
+  background: var(--greedy-nav-bg);
+}
+
+body.dark-mode .greedy-nav a {
+  color: var(--masthead-link-color);
+}
+
+body.dark-mode .greedy-nav a:hover {
+  color: var(--masthead-link-color-hover);
+}
+
+body.dark-mode .page__footer {
+  color: var(--footer-color);
+}
+
+body.dark-mode a {
+  color: var(--link-color);
+}
+
+body.dark-mode a:hover {
+  color: var(--link-color-hover);
+}
+
+body.dark-mode p > code,
+body.dark-mode a > code,
+body.dark-mode li > code,
+body.dark-mode figcaption > code,
+body.dark-mode td > code {
+  background: var(--code-background-color);
+  border-color: var(--border-color);
+  color: var(--text-color);
+}
+
+body.dark-mode hr {
+  border-top-color: var(--border-color);
+}
+
+body.dark-mode blockquote {
+  border-left-color: var(--primary-color);
+}
+
+body.dark-mode .page__content h2 {
+  border-bottom-color: var(--border-color);
+}
+
+body.dark-mode .author__avatar img {
+  border-color: var(--border-color);
+}
+
+body.dark-mode .author__urls {
+  background: var(--sidebar-bg);
+  border-color: var(--border-color);
+  box-shadow: var(--sidebar-box-shadow);
+}
+
+body.dark-mode div.highlighter-rouge,
+body.dark-mode figure.highlight {
+  background-color: var(--code-background-color);
+  border-color: var(--border-color);
+  color: #d8d8d8;
+}
+
+body.dark-mode div.highlighter-rouge:before,
+body.dark-mode figure.highlight:before {
+  background-color: #444;
+  color: #999;
+}
+
+/* Dark mode syntax highlighting - Solarized Dark inspired */
+body.dark-mode .highlight .hll { background-color: #444; }
+body.dark-mode .highlight .c { color: #78909c }
+body.dark-mode .highlight .err { color: #f07178 }
+body.dark-mode .highlight .k { color: #c792ea }
+body.dark-mode .highlight .l { color: #f78c6c }
+body.dark-mode .highlight .n { color: #d8d8d8 }
+body.dark-mode .highlight .o { color: #89ddff }
+body.dark-mode .highlight .p { color: #d8d8d8 }
+body.dark-mode .highlight .cm { color: #78909c }
+body.dark-mode .highlight .cp { color: #c792ea }
+body.dark-mode .highlight .c1 { color: #78909c }
+body.dark-mode .highlight .cs { color: #c792ea }
+body.dark-mode .highlight .gd { color: #f07178 }
+body.dark-mode .highlight .ge { color: #d8d8d8; font-style: italic }
+body.dark-mode .highlight .gr { color: #f07178 }
+body.dark-mode .highlight .gh { color: #f78c6c }
+body.dark-mode .highlight .gi { color: #c3e88d }
+body.dark-mode .highlight .go { color: #98c379 }
+body.dark-mode .highlight .gp { color: #d8d8d8 }
+body.dark-mode .highlight .gs { color: #d8d8d8; font-weight: bold }
+body.dark-mode .highlight .gu { color: #f78c6c }
+body.dark-mode .highlight .gt { color: #f07178 }
+body.dark-mode .highlight .kc { color: #c792ea }
+body.dark-mode .highlight .kd { color: #c792ea }
+body.dark-mode .highlight .kn { color: #89ddff }
+body.dark-mode .highlight .kp { color: #c792ea }
+body.dark-mode .highlight .kr { color: #c792ea }
+body.dark-mode .highlight .kt { color: #ffcb6b }
+body.dark-mode .highlight .ld { color: #c3e88d }
+body.dark-mode .highlight .m { color: #f78c6c }
+body.dark-mode .highlight .s { color: #c3e88d }
+body.dark-mode .highlight .na { color: #d8d8d8 }
+body.dark-mode .highlight .nb { color: #82aaff }
+body.dark-mode .highlight .nc { color: #ffcb6b }
+body.dark-mode .highlight .no { color: #f78c6c }
+body.dark-mode .highlight .nd { color: #82aaff }
+body.dark-mode .highlight .ni { color: #d8d8d8 }
+body.dark-mode .highlight .ne { color: #f07178 }
+body.dark-mode .highlight .nf { color: #82aaff }
+body.dark-mode .highlight .nl { color: #d8d8d8 }
+body.dark-mode .highlight .nn { color: #ffcb6b }
+body.dark-mode .highlight .nx { color: #d8d8d8 }
+body.dark-mode .highlight .py { color: #d8d8d8 }
+body.dark-mode .highlight .nt { color: #f07178 }
+body.dark-mode .highlight .nv { color: #82aaff }
+body.dark-mode .highlight .ow { color: #89ddff }
+body.dark-mode .highlight .w { color: #d8d8d8 }
+body.dark-mode .highlight .mf { color: #f78c6c }
+body.dark-mode .highlight .mh { color: #f78c6c }
+body.dark-mode .highlight .mi { color: #f78c6c }
+body.dark-mode .highlight .mo { color: #f78c6c }
+body.dark-mode .highlight .sb { color: #c3e88d }
+body.dark-mode .highlight .sc { color: #c3e88d }
+body.dark-mode .highlight .sd { color: #78909c }
+body.dark-mode .highlight .s2 { color: #c3e88d }
+body.dark-mode .highlight .se { color: #f78c6c }
+body.dark-mode .highlight .sh { color: #c3e88d }
+body.dark-mode .highlight .si { color: #f78c6c }
+body.dark-mode .highlight .sx { color: #c3e88d }
+body.dark-mode .highlight .sr { color: #c3e88d }
+body.dark-mode .highlight .s1 { color: #c3e88d }
+body.dark-mode .highlight .ss { color: #c3e88d }
+body.dark-mode .highlight .bp { color: #82aaff }
+body.dark-mode .highlight .vc { color: #82aaff }
+body.dark-mode .highlight .vg { color: #82aaff }
+body.dark-mode .highlight .vi { color: #82aaff }
+body.dark-mode .highlight .il { color: #f78c6c }
+
+/* Dark mode tables */
+body.dark-mode table {
+  border-color: var(--table-border);
+}
+
+body.dark-mode table th,
+body.dark-mode table td {
+  border-color: var(--table-border);
+}
+
+body.dark-mode table tr:nth-child(even) {
+  background-color: var(--table-background-even);
+}
+
+/* Dark mode notices */
+body.dark-mode .notice {
+  background-color: var(--notice-background);
+}
+
+/* Dark mode toggle button */
+.dark-mode-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  margin: 0 1rem;
+  color: var(--masthead-link-color);
+  font-size: 1.1rem;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  transition: color 0.2s ease-in-out;
+
+  &:hover {
+    color: var(--masthead-link-color-hover);
+  }
+}
+
+/* Dark mode toggle in visible links (masthead table-cell layout) */
+.masthead__menu-item > .dark-mode-toggle {
+  margin: 0 1rem;
+  padding: 0.5rem 0;
+}
+
+/* Dark mode toggle in hidden links (dropdown menu) */
+.greedy-nav .hidden-links .dark-mode-toggle {
+  display: inline-flex;
+  margin: 0;
+  padding: 10px 20px;
+  font-size: $type-size-5;
+  color: var(--masthead-link-color);
+
+  &:hover {
+    color: var(--masthead-link-color-hover);
+    background: mix(#fff, $primary-color, 75%);
+  }
+}
+
+/* Dark mode footer */
+body.dark-mode .page__footer {
+  background-color: var(--background-color) !important;
+  border-top: 1px solid var(--border-color);
+  color: var(--footer-color);
+
+  .fas,
+  .fab,
+  .far,
+  .fal {
+    color: var(--footer-color);
+  }
+
+  a {
+    color: var(--link-color);
+  }
+}
+
+/* Dark mode sidebar (left column with avatar, name, social links) */
+body.dark-mode .sidebar {
+  color: var(--text-color);
+}
+
+body.dark-mode .sidebar h3,
+body.dark-mode .sidebar h4,
+body.dark-mode .sidebar h5,
+body.dark-mode .sidebar h6 {
+  color: var(--text-color);
+}
+
+body.dark-mode .sidebar p,
+body.dark-mode .sidebar li {
+  color: var(--text-color);
+}
+
+body.dark-mode .author__content {
+  color: var(--text-color);
+}
+
+body.dark-mode .author__urls {
+  background: transparent;
+  border-color: var(--border-color);
+  z-index: 1;
+  box-shadow: none;
+
+  a {
+    color: var(--text-color);
+  }
+
+  .fa,
+  .fas,
+  .fab,
+  .far,
+  .fal,
+  .ai {
+    color: var(--text-color);
+  }
+}
+
+/* Author bio link styling */
+body.dark-mode .author__bio a {
+  color: var(--link-color);
+}
+
+/* Dark mode sidebar bio link inside author__content (fixes black "Stack AV" link) */
+body.dark-mode .author__content p a,
+body.dark-mode .author__content .author__bio a {
+  color: var(--link-color) !important;
+}
+
+/* Dark mode page title and content headers */
+body.dark-mode .page__title,
+body.dark-mode .page__meta {
+  color: var(--text-color);
+}
+
+body.dark-mode .page__content {
+  color: var(--text-color);
+}
+
+body.dark-mode .page__content h1,
+body.dark-mode .page__content h2,
+body.dark-mode .page__content h3,
+body.dark-mode .page__content h4,
+body.dark-mode .page__content h5,
+body.dark-mode .page__content h6 {
+  color: var(--text-color);
+}
+
+/* Dark mode dropdown menus (hidden-links) */
+body.dark-mode .hidden-links {
+  background: var(--sidebar-bg);
+  border-color: var(--border-color);
+  box-shadow: 0 0 10px rgba(#000, 0.5);
+
+  &:before {
+    border-color: var(--border-color) transparent;
+  }
+
+  &:after {
+    border-color: var(--sidebar-bg) transparent;
+  }
+}
+
+/* Dark mode button (Follow button in author panel) */
+body.dark-mode .btn,
+body.dark-mode .btn--inverse {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}

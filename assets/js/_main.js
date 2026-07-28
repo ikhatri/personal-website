@@ -3,6 +3,43 @@
    ========================================================================== */
 
 $(document).ready(function(){
+
+  // Dark mode toggle
+  var darkModeToggle = document.getElementById('dark-mode-toggle');
+  var darkModeIcon = darkModeToggle ? darkModeToggle.querySelector('i') : null;
+
+  function setDarkMode(isDark) {
+    if (isDark) {
+      document.body.classList.add('dark-mode');
+      document.documentElement.classList.add('dark-mode');
+      if (darkModeIcon) {
+        darkModeIcon.classList.remove('fa-moon');
+        darkModeIcon.classList.add('fa-sun');
+      }
+    } else {
+      document.body.classList.remove('dark-mode');
+      document.documentElement.classList.remove('dark-mode');
+      if (darkModeIcon) {
+        darkModeIcon.classList.remove('fa-sun');
+        darkModeIcon.classList.add('fa-moon');
+      }
+    }
+  }
+
+  // Check for saved preference or system preference
+  var savedMode = localStorage.getItem('dark-mode');
+  if (savedMode === 'true' || (savedMode === null && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    setDarkMode(true);
+  }
+
+  if (darkModeToggle) {
+    darkModeToggle.addEventListener('click', function() {
+      var isDark = document.body.classList.contains('dark-mode');
+      setDarkMode(!isDark);
+      localStorage.setItem('dark-mode', !isDark);
+    });
+  }
+
    // Sticky footer
   var bumpIt = function() {
       $("body").css("margin-bottom", $(".page__footer").outerHeight(true));
